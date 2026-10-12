@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>Temsi-Änderungsschneiderei</title>
+    <title>Temsi-Änderungsschneiderei Wien – Änderungen seit 1998</title>
 
     <!-- CDN+CSS -->
     <link href="css/output.css" rel="stylesheet">
@@ -15,9 +15,7 @@
 
     <!-- SEO -->
     <meta name="description"
-          content="Temsi-Änderungsschneiderei in Wien – seit 1998. Änderungen von Kleidern, Anzügen, Brautmode und mehr. Besuchen Sie uns am Josefplatz 6 im Palais Pálffy.">
-    <meta name="keywords"
-          content="Schneiderei Wien, Änderungsschneiderei Wien, Maßschneiderei Wien, Marken Kleidung Ändern, Schneider Atelier, Temsi, Brautkleid ändern, Anzug kürzen, Hose kürzen, Mode Atelier">
+          content="Änderungsschneiderei im 1. Bezirk Wien (Josefplatz 6, Palais Pálffy): Kleider, Anzüge und Brautmode ändern lassen – seit 1998. Mo–Sa 10–18 Uhr.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.temsi-atelier.at/">
 
@@ -27,19 +25,91 @@
     <meta property="og:image" content="https://www.temsi-atelier.at/files/logo1.webp">
     <meta property="og:url" content="https://www.temsi-atelier.at/">
     <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="de_AT">
+    <meta property="og:site_name" content="Temsi-Änderungsschneiderei">
+    <meta property="og:image:alt" content="Logo der Temsi-Änderungsschneiderei in Wien">
+    <meta name="twitter:card" content="summary">
 
     <!-- Carousel + Playfair Font -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        playfair: ['"Playfair Display"', 'serif'],
-                    }
-                }
-            }
+
+    <!-- Google-Maps-Platzhalter (Karte wird erst nach Klick geladen) -->
+    <style>
+        .map-consent {
+            min-height: 170px;
+        }
+
+        .map-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.92);
+            border: 2px solid #000;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .map-placeholder button {
+            padding: 0.5rem 1rem;
+            border: 2px solid #000;
+            border-radius: 0.5rem;
+            background: #fff;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .map-placeholder button:hover,
+        .map-placeholder button:focus-visible {
+            background: #000;
+            color: #fff;
+        }
+    </style>
+
+    <!-- Strukturierte Daten -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://www.temsi-atelier.at/#business",
+          "name": "Temsi-Änderungsschneiderei OG",
+          "foundingDate": "1998",
+          "areaServed": {
+            "@type": "City",
+            "name": "Wien"
+          },
+          "hasMap": "https://www.google.com/maps/search/?api=1&query=Josefplatz+6%2C+1010+Wien",
+          "description": "Änderungsschneiderei in Wien seit 1998: Änderungen von Kleidern, Anzügen und Brautmode.",
+          "url": "https://www.temsi-atelier.at/",
+          "logo": "https://www.temsi-atelier.at/files/logo1.webp",
+          "image": "https://www.temsi-atelier.at/files/logo1.webp",
+          "telephone": "+436608271010",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Josefplatz 6",
+            "postalCode": "1010",
+            "addressLocality": "Wien",
+            "addressCountry": "AT"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 48.2062899,
+            "longitude": 16.3678419
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "10:00",
+            "closes": "18:00"
+          }
         }
     </script>
 
@@ -90,7 +160,7 @@
                              class="rounded-lg object-contain w-full h-full"/>
                     </div>
                     <div class="swiper-slide">
-                        <img loading="lazy" src="files/car2.webp" alt="Abstecken eines Kleid"
+                        <img loading="lazy" src="files/car2.webp" alt="Abstecken eines Kleides"
                              class="rounded-lg object-contain w-full h-full"/>
                     </div>
                     <div class="swiper-slide">
@@ -113,12 +183,12 @@
 
             <!-- Text links -->
             <div class="w-full sm:w-1/2 flex flex-col justify-center text-center sm:text-left">
-                <h1 class="text-2xl sm:text-4xl font-playfair mb-4">
+                <p class="text-2xl sm:text-4xl font-playfair mb-4">
                     <strong>Willkommen in der</strong>
-                </h1>
-                <h1 class="text-2xl sm:text-4xl font-playfair mb-4">
+                </p>
+                <h2 class="text-2xl sm:text-4xl font-playfair mb-4">
                     <strong>Temsi-Änderungsschneiderei</strong>
-                </h1>
+                </h2>
                 <p class="text-base sm:text-lg font-playfair leading-relaxed tracking-normal">
                     <strong>
                         Seit 1998 sind wir im 1. Bezirk für unsere Qualität bekannt.
@@ -147,7 +217,7 @@
                     <p><strong>von 10:00 - 18:00 Uhr</strong></p>
                     <p><strong>Sie erreichen uns unter:</strong></p>
 
-                    <a href="tel:+43 660/8271010" class="bg-white/0 font-bold py-2 px-4 rounded-lg inline-block">
+                    <a href="tel:+436608271010" class="bg-white/0 font-bold py-2 px-4 rounded-lg inline-block">
                         📞 +43 660/8271010
                     </a>
                 </div>
@@ -164,11 +234,15 @@
             <p class="font-playfair"><strong> Diese befindet sich nur wenige Gehminuten von unserer Schneiderei
                 entfernt.</strong></p>
             <!-- Google Maps -->
-            <div class="mt-6 relative pb-[25.00%]">
-                <iframe class="absolute top-0 left-0 w-full h-full rounded-lg border-2 border-black"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2657.247707282643!2d16.3678419!3d48.2062899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d0798fff6556b%3A0x26c4c1a41e788ac3!2sPalais%20P%C3%A1lffy%20Kultur%20%26%20Events%20GmbH!5e0!3m2!1sen!2sat!4v1710000000000"
-                        allowfullscreen="">
-                </iframe>
+            <div id="map-container" class="map-consent mt-6 relative pb-[25.00%]"
+                 data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2657.247707282643!2d16.3678419!3d48.2062899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d0798fff6556b%3A0x26c4c1a41e788ac3!2sPalais%20P%C3%A1lffy%20Kultur%20%26%20Events%20GmbH!5e0!3m2!1sen!2sat!4v1710000000000">
+                <div class="map-placeholder">
+                    <p>Mit dem Laden der Karte werden Daten an Google übertragen.
+                        Mehr dazu in der <a href="datenschutz.html#google-maps" class="underline">Datenschutzerklärung</a>.</p>
+                    <button type="button" id="map-load">Karte laden</button>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Josefplatz+6%2C+1010+Wien"
+                       target="_blank" rel="noopener noreferrer" class="underline">In Google Maps öffnen</a>
+                </div>
             </div>
         </div>
     </section>
@@ -195,6 +269,21 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         }
+    });
+</script>
+<script>
+    // Google Maps erst nach Klick laden (Einwilligung)
+    document.getElementById("map-load").addEventListener("click", function () {
+        var container = document.getElementById("map-container");
+        var iframe = document.createElement("iframe");
+        iframe.className = "absolute top-0 left-0 w-full h-full rounded-lg border-2 border-black";
+        iframe.src = container.dataset.src;
+        iframe.title = "Karte: Temsi-Änderungsschneiderei, Josefplatz 6, 1010 Wien";
+        iframe.loading = "lazy";
+        iframe.referrerPolicy = "no-referrer-when-downgrade";
+        iframe.setAttribute("allowfullscreen", "");
+        container.classList.remove("map-consent");
+        container.replaceChildren(iframe);
     });
 </script>
 </body>
